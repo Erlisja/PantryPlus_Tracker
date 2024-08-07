@@ -7,9 +7,9 @@ export async function POST(req) {
 
   try {
     const recipe = await generateRecipe(ingredients);
-    const imageUrl = await generateRecipeImage(ingredients);
+    //const imageUrl = await generateRecipeImage(ingredients);
 
-    return new Response(JSON.stringify({ recipe, imageUrl }), {
+    return new Response(JSON.stringify({ recipe }), {
       status: 200,
       headers: {
         'Content-Type': 'application/json',
