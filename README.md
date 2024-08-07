@@ -16,6 +16,15 @@ Pantry Plus Tracker is a web application that helps you manage your pantry items
 - **Material-UI**: For UI components and styling.
 - **Node.js**: For server-side operations and API requests.
 
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+  ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+  ![Material-UI](https://img.shields.io/badge/Material%20UI-0081CB?style=flat&logo=material-ui&logoColor=white)
+  ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+  ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+  ![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=flat&logo=openai&logoColor=white)
+
+
 ## Getting Started
 
 ### Prerequisites
