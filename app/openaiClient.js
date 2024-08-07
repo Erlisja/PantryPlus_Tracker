@@ -41,38 +41,38 @@ export async function generateRecipe(ingredients) {
   }
 }
 
-export async function generateRecipeImage(recipeTitle) {
-    // Create a more detailed and descriptive prompt
-    const prompt = `A realistic, high-quality photo of a delicious ${recipeTitle}. The image should look appetizing, with professional food styling and lighting.`;
+// export async function generateRecipeImage(recipeTitle) {
+//     // Create a more detailed and descriptive prompt
+//     const prompt = `A realistic, high-quality photo of a delicious ${recipeTitle}. The image should look appetizing, with professional food styling and lighting.`;
   
-    try {
-      const response = await fetch('https://api.openai.com/v1/images/generations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
-        },
-        body: JSON.stringify({
-          prompt: prompt,
-          n: 1,
-          size: '512x512', // Adjust size for better quality
-        }),
-      });
+//     try {
+//       const response = await fetch('https://api.openai.com/v1/images/generations', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//           Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
+//         },
+//         body: JSON.stringify({
+//           prompt: prompt,
+//           n: 1,
+//           size: '512x512', // Adjust size for better quality
+//         }),
+//       });
   
-      const data = await response.json();
+//       const data = await response.json();
   
-      if (!response.ok) {
-        throw new Error(`Image API error: ${data.error.message}`);
-      }
+//       if (!response.ok) {
+//         throw new Error(`Image API error: ${data.error.message}`);
+//       }
   
-      if (data.data && data.data.length > 0) {
-        return data.data[0].url;
-      } else {
-        throw new Error('No image generated');
-      }
-    } catch (error) {
-      console.error('Error generating image:', error);
-      throw error;
-    }
-  }
+//       if (data.data && data.data.length > 0) {
+//         return data.data[0].url;
+//       } else {
+//         throw new Error('No image generated');
+//       }
+//     } catch (error) {
+//       console.error('Error generating image:', error);
+//       throw error;
+//     }
+//   }
   
